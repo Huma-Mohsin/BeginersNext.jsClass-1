@@ -1,0 +1,82 @@
+------------------------------------Introduction to Next.js------------------------------------------------------
+Slide 1: Introduction to Next.js
+
+Definition: Next.js is a React framework for building fast, scalable web applications with features like server-side rendering (SSR) and static site generation (SSG).
+
+SSR (Server-Side Rendering)
+How it works: Every time a user visits the page, the server quickly builds the page with the latest data and sends it to the user.
+Example: Imagine a news website. You want the latest articles every time you visit, so the server prepares the page each time someone asks for it.
+When to use: Good for pages that need fresh data every time, like news feeds or personalized dashboards.
+
+SSG (Static Site Generation)
+How it works: The page is built just once when you first set it up. After that, it’s saved as a file, ready to be sent to everyone quickly.
+
+When to use: Best for pages that don’t change often, like blogs or marketing pages, because it’s faster to load.
+
+Key Advantage: Offers pre-rendering, automatic code splitting, and excellent developer experience.
+
+--------------------------------WHY USE NEXT.Js---------------------------------------------------------
+Slide 2: Why Use Next.js?
+
+Performance: Optimized for speed with built-in SSR and SSG
+SEO Friendly: Server-rendered pages load faster, improving SEO
+Developer Experience: Fast refresh, intuitive API, and built-in TypeScript support
+File-Based Routing: Easy routing based on the file structure
+API Routes: you can define API logic directly within your Next.js app without needing a separate backend server.
+
+--------------------------------CORE FEATURES OF EXT>JS-----------------------------------------------------------
+
+Slide 3: Core Features of Next.js
+Server-Side Rendering (SSR) - Pages rendered on the server for fast load times
+Static Site Generation (SSG) - Pages pre-generated at build time, ideal for blogs, documentation
+API Routes - Build backend endpoints without needing a separate server
+Image Optimization - Built-in image handling for improved performance
+Automatic Code Splitting - Only necessary code loads per page for faster navigation
+
+------------------------------File Based Routing-------------------------------------------------------------
+Slide 4: File-Based Routing
+Overview: Pages are organized in the pages/ folder.
+Dynamic Routing: Create routes by naming files with brackets, e.g., [id].js for dynamic routes.
+Link Component: For internal navigation without reloading the page, similar to single-page apps.
+
+------------------------------Rendering Methods------------------------------------------------------------
+Slide 5: Rendering Methods in Next.js
+Client-Side Rendering (CSR) - JavaScript runs on the client
+Server-Side Rendering (SSR) - Data fetching and rendering occur on the server
+Static Site Generation (SSG) - Pages pre-rendered at build time
+Incremental Static Regeneration (ISR) - Allows updating static content without rebuilding the entire site
+
+-------------------------------Data Fetching-------------------------------------------------------------
+Slide 6: Data Fetching in Next.js
+getStaticProps - For SSG, fetches data at build time
+getServerSideProps - For SSR, fetches data on each request
+getStaticPaths - Used with getStaticProps for dynamic paths
+API Routes - Fetch data directly from server-side endpoints in Next.js
+
+------------------------------Advantages------------------------------------------------------------------
+Slide 7: Advantages and Use Cases
+Advantages:
+Improved SEO and performance
+Streamlined development with server-side capabilities
+Great for static and dynamic content
+Use Cases:
+Blogs and documentation (SSG)
+E-commerce (SSR/ISR for dynamic content)
+Portfolios, company websites, and landing pages
+
+-----------------------------Tailwind In Next.js-------------------------------------------------------
+Slide 8: Next.js with Tailwind CSS
+Styling Option: Easy integration with Tailwind CSS
+Utility-First CSS: Provides fast and responsive styling
+Advantages: Consistent design system and easier component styling
+
+---------------------------API Routes-------------------------------------------------------------
+Slide 9: Next.js API Routes
+What: Built-in API routes allow adding backend functionality
+Use Cases: Authentication, form handling, data processing
+How: Create routes by adding files to pages/api (e.g., pages/api/hello.js)
+
+-------------------------------Conclusion-----------------------------------------------------
+Slide 10: Conclusion
+Why Choose Next.js?: Great for SEO, optimized performance, developer-friendly.
+Future with Next.js: Ideal for projects requiring both static and dynamic content, with growing community support.
