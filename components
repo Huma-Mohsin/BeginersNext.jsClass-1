@@ -14,6 +14,28 @@ Props: Components can accept inputs (props) to customize their content, making t
 Types of Components in Next.js:
 -------------------------------
 
-Static Components: These components don't rely on any data that changes dynamically and are pre-rendered.
+Static Components: These components don't rely on any data that changes dynamically and are pre-rendered.In Next.js, you'll often create components for things like headers, footers, navbars, buttons, and any reusable piece of your UI.
 
 Dynamic Components: These components may depend on user interactions, data fetched from APIs, or state changes (using useState, for example).
+---------------------------------------------------------------------------------------------------------------------------
+
+// components/Button.js
+import React from 'react';
+
+function Button({ label }) {
+  return <button>{label}</button>;
+}
+
+export default Button;
+---------------------------------
+// pages/index.js
+import Button from '../components/Button';
+
+export default function Home() {
+  return (
+    <div>
+      <h1>Welcome to My Next.js App</h1>
+      <Button label="Click Me" />
+    </div>
+  );
+}
